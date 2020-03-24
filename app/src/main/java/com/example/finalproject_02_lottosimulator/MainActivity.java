@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity{
         @Override
         public void run() {
 
-            if (useMoneyAmount < 1000000000) {
+            if (useMoneyAmount < 10000000) {
                 makeWinLottoNum();
                 checkLottoRank();
 
