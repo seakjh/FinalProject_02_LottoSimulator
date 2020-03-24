@@ -24,6 +24,13 @@ public class MainActivity extends BaseActivity{
     long useMoneyAmount = 0;
     long winMoneyAmount = 0;
 
+    int firstRankCount = 0;
+    int secondRankCount = 0;
+    int thirdRankCount = 0;
+    int fourthRankCount = 0;
+    int fifthRankCount = 0;
+    int noRankCount = 0;
+
     ActivityMainBinding binding = null;
 
     @Override
