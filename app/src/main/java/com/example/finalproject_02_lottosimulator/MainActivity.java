@@ -20,6 +20,8 @@ public class MainActivity extends BaseActivity{
     int[] winLottoNumArr = new int[6];
     int bonusNum = 0;
 
+    long useMoneyAmount = 0;
+
     ActivityMainBinding binding = null;
 
     @Override
@@ -37,6 +39,8 @@ public class MainActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 makeWinLottoNum();
+
+                checkLottoRank();
             }
         });
 
@@ -115,5 +119,12 @@ public class MainActivity extends BaseActivity{
 
 
 
+    }
+
+    void checkLottoRank() {
+
+        useMoneyAmount += 1000;
+
+        binding.useMoneyTxt.setText(String.format("사용 금액 : %,d원", useMoneyAmount));
     }
 }
