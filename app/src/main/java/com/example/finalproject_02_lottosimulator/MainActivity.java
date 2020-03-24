@@ -67,7 +67,7 @@ public class MainActivity extends BaseActivity{
                 if (isDuplOk) {
                     winLottoNumArr[i] = randomNum;
                     Log.i("당첨번호", randomNum+"");
-                    break;
+                    break; // 무한반복 탈출
                 }
 
             }
